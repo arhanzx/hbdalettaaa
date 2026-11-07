@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A Little Gift for You</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<section class="scene on" id="s1">
+  <div class="small">✦ A little something for you ✦</div>
+  <div class="gift" id="gift">🎁</div>
+  <div class="small">tap to unwrap your surprise ♡</div>
+</section>
+
+<section class="scene" id="s2">
+  <div class="small">✦ Counting down the moments ✦</div>
+  <h1>Your Special Day<br>Is Almost Here!</h1>
+  <p>Something lovely is waiting just for you ♡</p>
+  <div class="cd">
+    <div><b id="h">00</b><span>HOURS</span></div>
+    <div><b id="m">00</b><span>MINUTES</span></div>
+    <div><b id="s">00</b><span>SECONDS</span></div>
+  </div>
+  <button id="open">✦ OPEN YOUR GIFT ✦</button>
+</section>
+
+<section class="scene" id="s3">
+  <div id="pols"></div>
+  <div class="small">✦ A little love note for you ✦</div>
+  <h1>It's Your Special Day!</h1>
+  <p><i id="sub"></i></p>
+  <button id="read">READ YOUR LETTER</button>
+</section>
+
+<section class="scene" id="s4">
+  <h1 style="font-size:clamp(34px,9vw,56px)">Happy Birthday!</h1>
+  <div class="letter"><p id="typed"></p></div>
+  <div><button id="tomusic">♫ LET'S PLAY SOME MUSIC</button> <button id="again">↺ READ AGAIN</button></div>
+</section>
+
+<section class="scene" id="s5">
+  <div class="small">✦ A little song for you ✦</div>
+  <h1 style="font-size:clamp(30px,8vw,48px)">This One's for You!</h1>
+  <div class="music">
+    <iframe class="yt" id="yt" title="Birthday Song" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="frames" id="frames"></div>
+  </div>
+  <a class="lnk" id="ytlink" target="_blank" rel="noopener">Can't see the video? Watch it on YouTube ↗</a>
+  <div><button id="togift">🎂 ONE LAST SURPRISE!</button> <button id="back">‹ GO BACK</button></div>
+</section>
+
+<section class="scene" id="s6">
+  <div class="small">✦ A little gift, just for you ✦</div>
+  <div class="gifts"><img class="cakeimg" id="cake" alt="Birthday cake" src="assets/cake.webp"><img class="flwimg" alt="Flower bouquet" src="assets/flower.webp"></div>
+  <p id="wish">Make a wish, then tap the cake! 🕯️</p>
+  <p><i id="giftmsg"></i></p>
+  <button id="back2">‹ GO BACK</button>
+</section>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
